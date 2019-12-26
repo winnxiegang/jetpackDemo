@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".fragment.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/bt_Login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="注册后点击去登录" />
+    <Button
+        android:id="@+id/bt_Main"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="点击去首页" />
+</LinearLayout>

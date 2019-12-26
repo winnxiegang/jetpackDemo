@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.example.myjeptdemo.viewmodel.ViewModelList" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:context=".ViewModelListActivity">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:onClick="@{()->data.jumpMainActivity()}"
+            android:text="VIewModel演示"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:onClick="@{()->data.jumpVMSavectivity()}"
+            android:text="VIewModel存储演示"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:onClick="@{()->data.jumpViewModelActivityActivity()}"
+            android:text="ActivityVIewModel演示"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:onClick="@{()->data.jumpViewRoomOneActivity()}"
+            android:text="数据库基本演练1"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:onClick="@{()->data.jumpViewRoomLiveDataActivity()}"
+            android:text="数据库LiveData演练1"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:onClick="@{()->data.jumpRoomViewModelActivity()}"
+            android:text="数据库ViewModel演练"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:onClick="@{()->data.jumpNeiHanActivity()}"
+            android:text="Demo演示"></Button>
+    </LinearLayout>
+</layout>
